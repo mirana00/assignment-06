@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy - Adopt Your Best Friend</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- DaisyUI CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.js"></script>
+</head>
+<body>
+   
+       <header>
+         <!-- Navbar -->
+         <nav class="bg-white shadow-lg">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center">
+                    <!-- Logo -->
+                    <div class="py-4 flex items-center gap-x-2">
+                        <img src="images/logo.webp" alt="">
+                        <a href="#" class="font-bold text-xl text-gray-800">Peddy</a>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <div class="block md:hidden">
+                        <button class="navbar-burger flex items-center p-2 border rounded text-gray-600 border-gray-400">
+                            <img width="20" height="20" src="https://img.icons8.com/ios/50/bulleted-list.png" alt="bulleted-list"/>
+                        </button>
+                    </div>
+                    <!-- Menu -->
+                    <div class="hidden md:flex md:items-center space-x-4">
+                        <a href="#" class="py-3 px-4 text-gray-700 hover:text-gray-900">Home</a>
+                        <a href="#" class="py-3 px-4 text-gray-700 hover:text-gray-900">Shop</a>
+                        <a href="#" class="py-3 px-4 text-gray-700 hover:text-gray-900">Contact</a>
+                    </div>
+                    <div class="hidden md:block"><img width="20" height="20" src="https://img.icons8.com/pulsar-line/48/user.png" alt="user"><a href=""></a></img></div>
+                </div>
+            </div>
+            <!-- Mobile Menu (for smaller screens) -->
+            <div class="hidden navbar-menu">
+                <div class="container mx-auto px-4">
+                    <a href="#" class="block py-2 px-4 text-sm text-gray-700">Home</a>
+                    <a href="#" class="block py-2 px-4 text-sm text-gray-700">Shop</a>                   
+                    <a href="#" class="block py-2 px-4 text-sm text-gray-700">Contact</a>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- banner -->
+         <section class="mt-10 md:mt-20">
+                <div class="flex flex-col items-center justify-center h-full bg-opacity-50">
+                    <div class="text-center space-y-4">
+                        <h3 class="md:text-lg text-gray-600 font-bold">Bringing Families Together 🐕‍🦺🐇🦜🐈</h3>
+                        <h1 class="text-4xl lg:text-5xl font-bold"> Your Path to Adoption <br> Starts Here</h1>
+                        <p class="mt-4 text-lg">Adopt a pet today and give them a loving home.</p>
+                        <button class="btn btn-primary mt-6 bg-green-600 p-4 rounded-xl text-white">View More</button>
+                    </div>
+                    <div><img src="images/pet.webp" alt=""></div>
+                </div>
+            </section>
+            
+        
+       </header>
+
+<main>
+
+</main>
+
+
+    <footer class="footer bg-base-200 text-base-content p-5 lg:p-20 bg-gray-400 space-y-7 lg:flex justify-between items-center">
+        <nav>
+        <div class="flex gap-x-2 mb-3">
+          <img src="images/logo.webp" alt="">
+          <h1 class="text-gray-100 text-3xl font-bold">Peddy</h1>
+        </div>
+        <h5 class="text-lg">Location: av. Washington 165, NY CA 54003 <br>
+            Phone: +31 85 964 47 25 <br>
+            Email: info@yourdomain.com <br>
+            Openings hours: 9.00 AM - 5.00 PM</h5>
+            <div>
+                <a class="link link-hover" href="https://www.facebook.com/"><button><img width="35" height="35" src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/></button></a>
+                <a class="link link-hover" href="https://x.com/?lang=en"><button><img width="35" height="35" src="https://img.icons8.com/ios/35/twitterx--v1.png" alt="twitterx--v1"/></button></a>
+                <a class="link link-hover" href="https://www.youtube.com/"><button><img width="35" height="35" src="https://img.icons8.com/color/35/youtube-play.png" alt="youtube-play"/></button></a>
+                <a class="link link-hover" href="https://www.instagram.com/"><button><img width="35" height="35" src="https://img.icons8.com/fluency/35/instagram-new.png" alt="instagram-new"/></button></a>
+            </div>
+        </nav>
+        <nav class="flex flex-col">
+          <h6 class="footer-title text-xl font-bold text-gray-700">Usefull Links</h6>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">animals</a>
+          <a class="link link-hover">Foundation</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        
+        <form>
+          <h3 class="footer-title text-gray-800 font-bold text-xl ">Drop a message</h6>
+          <fieldset class="form-control w-80">
+            <div class="join flex flex-col space-y-3 mt-3 w-3/4">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item p-4 rounded-2xl" />
+              <button class="btn btn-primary join-item p-4 bg-green-800 rounded-2xl text-white">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+
+
+        <script>
+            // Mobile menu toggle
+            document.querySelector('.navbar-burger').addEventListener('click', function() {
+                document.querySelector('.navbar-menu').classList.toggle('hidden');
+            });
+        </script>
+    
+    
+</body>
+</html>
